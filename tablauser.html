@@ -1,0 +1,177 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calificaciones-Guevara</title>
+    <link rel="stylesheet" href="/assets/css/estilostabla.css">
+</head>
+<body>
+    <header>
+        <img src="/assets/img/logoguevara.png" alt="Logo del Colegio Guevara">
+        <h1 style="font-size: 250%;">Calificaciones del Colegio Guevara</h1>
+    </header>
+
+    <div class="select-container">
+        <a href="index.html" style="text-decoration: none;">
+            <button class="boton">Volver</button>
+        </a>
+    </div>
+    <form id="boletinForm">
+        <table>
+            <thead>
+                <tr>
+                    <th>Materias</th>
+                    <th>1er informe (1er Cuatrimestre)</th>
+                    <th>2do informe (1er Cuatrimestre)</th>
+                    <th>Nota 1er Cuatrimestre</th>
+                    <th>1er informe (2do Cuatrimestre)</th>
+                    <th>2do informe (2do Cuatrimestre)</th>
+                    <th>Nota 2do Cuatrimestre</th>
+                    <th>Calificación Anual</th>
+                    <th>Diciembre Acreditación</th>
+                    <th>Febrero Marzo</th>
+                    <th>Definitiva</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                <tr>
+                    <td>Ingles</td>
+                    <td><input type="number" class="centrado" id="ingles_primer_informe" name="ingles[primer_informe]" min="0" max="10"></td>
+                    <td><input type="number" class="centrado" id="ingles_segundo_informe" name="ingles[segundo_informe]" min="0" max="10"></td>
+                    <td><input type="number" class="centrado" id="ingles_nota_primer_cuatrimestre" name="ingles[nota_primer_cuatrimestre]" min="0" max="10"></td>
+                    <td><input type="number" class="centrado" id="ingles_primer_informe2" name="ingles[primer_informe2]" min="0" max="10"></td>
+                    <td><input type="number" class="centrado" id="ingles_segundo_informe2" name="ingles[segundo_informe2]" min="0" max="10"></td>
+                    <td><input type="number" class="centrado" id="ingles_nota_segundo_cuatrimestre" name="ingles[nota_segundo_cuatrimestre]" min="0" max="10"></td>
+                    <td><input type="number" class="centrado" id="ingles_calificacion_anual" name="ingles[calificacion_anual]" min="0" max="10"></td>
+                    <td><input type="number" class="centrado" id="ingles_calificacion_diciembre" name="ingles[calificacion_diciembre]" min="0" max="10"></td>
+                    <td><input type="number" class="centrado" id="ingles_calificacion_febrero_marzo" name="ingles[calificacion_febrero_marzo]" min="0" max="10"></td>
+                    <td><input type="number" class="centrado" id="ingles_calificacion_definitiva" name="ingles[calificacion_definitiva]" min="0" max="10"></td>
+                </tr>
+                <tr>
+                    <td>Matematica</td>
+                    <td><input type="number" class="centrado" id="matematica_primer_informe" name="matematica[primer_informe]" min="0" max="10" required></td>
+                    <td><input type="number" class="centrado" id="matematica_segundo_informe" name="matematica[segundo_informe]" min="0" max="10" required></td>
+                    <td><input type="number" class="centrado" id="matematica_nota_primer_cuatrimestre" name="matematica[nota_primer_cuatrimestre]" min="0" max="10" required></td>
+                    <td><input type="number" class="centrado" id="matematica_primer_informe2" name="matematica[primer_informe2]" min="0" max="10" required></td>
+                    <td><input type="number" class="centrado" id="matematica_segundo_informe2" name="matematica[segundo_informe2]" min="0" max="10" required></td>
+                    <td><input type="number" class="centrado" id="matematica_nota_segundo_cuatrimestre" name="matematica[nota_segundo_cuatrimestre]" min="0" max="10" required></td>
+                    <td><input type="number" class="centrado" id="matematica_calificacion_anual" name="matematica[calificacion_anual]" min="0" max="10" required></td>
+                    <td><input type="number" class="centrado" id="matematica_calificacion_diciembre" name="matematica[calificacion_diciembre]" min="0" max="10" required></td>
+                    <td><input type="number" class="centrado" id="matematica_calificacion_febrero_marzo" name="matematica[calificacion_febrero_marzo]" min="0" max="10" required></td>
+                    <td><input type="number" class="centrado" id="matematica_calificacion_definitiva" name="matematica[calificacion_definitiva]" min="0" max="10" required></td>
+                </tr>
+                <tr>
+                    <td>Marco Juridico</td>
+                    <td><input type="number" class="centrado" id="marco juridico_primer_informe" name="mjuridico[primer_informe]" min="0" max="10"></td>
+                    <td><input type="number" class="centrado" id="marco juridico_segundo_informe" name="mjuridico[segundo_informe]" min="0" max="10"></td>
+                    <td><input type="number" class="centrado" id="marco juridico_nota_primer_cuatrimestre" name="mjuridico[nota_primer_cuatrimestre]" min="0" max="10"></td>
+                    <td><input type="number" class="centrado" id="marco juridico_primer_informe2" name="mjuridico[primer_informe2]" min="0" max="10"></td>
+                    <td><input type="number" class="centrado" id="marco juridico_segundo_informe2" name="mjuridico[segundo_informe2]" min="0" max="10"></td>
+                    <td><input type="number" class="centrado" id="marco juridico_nota_segundo_cuatrimestre" name="mjuridico[nota_segundo_cuatrimestre]" min="0" max="10"></td>
+                    <td><input type="number" class="centrado" id="marco juridico_calificacion_anual" name="mjuridico[calificacion_anual]" min="0" max="10"></td>
+                    <td><input type="number" class="centrado" id="marco juridico_calificacion_diciembre" name="mjuridico[calificacion_diciembre]" min="0" max="10"></td>
+                    <td><input type="number" class="centrado" id="marco juridico_calificacion_febrero_marzo" name="mjuridico[calificacion_febrero_marzo]" min="0" max="10"></td>
+                    <td><input type="number" class="centrado" id="marco juridico_calificacion_definitiva" name="mjuridico[calificacion_definitiva]" min="0" max="10"></td>
+                </tr>
+                <tr>
+                    <td>Asistencia 2</td>
+                    <td><input type="number" class="centrado" id="asistencia 2_primer_informe" name="asis[primer_informe]" min="0" max="10"></td>
+                    <td><input type="number" class="centrado" id="asistencia 2_segundo_informe" name="asis[segundo_informe]" min="0" max="10"></td>
+                    <td><input type="number" class="centrado" id="asistencia 2_nota_primer_cuatrimestre" name="asis[nota_primer_cuatrimestre]" min="0" max="10"></td>
+                    <td><input type="number" class="centrado" id="asistencia 2_primer_informe2" name="asis[primer_informe2]" min="0" max="10"></td>
+                    <td><input type="number" class="centrado" id="asistencia 2_segundo_informe2" name="asis[segundo_informe2]" min="0" max="10"></td>
+                    <td><input type="number" class="centrado" id="asistencia 2_nota_segundo_cuatrimestre" name="asis[nota_segundo_cuatrimestre]" min="0" max="10"></td>
+                    <td><input type="number" class="centrado" id="asistencia 2_calificacion_anual" name="asis[calificacion_anual]" min="0" max="10"></td>
+                    <td><input type="number" class="centrado" id="asistencia 2_calificacion_diciembre" name="asis[calificacion_diciembre]" min="0" max="10"></td>
+                    <td><input type="number" class="centrado" id="asistencia 2_calificacion_febrero_marzo" name="asis[calificacion_febrero_marzo]" min="0" max="10"></td>
+                    <td><input type="number" class="centrado" id="asistencia 2_calificacion_definitiva" name="asis[calificacion_definitiva]" min="0" max="10"></td>
+                </tr>
+                <tr>
+                    <td>Autogestion</td>
+                    <td><input type="number" class="centrado" id="autogestion_primer_informe" name="aut[primer_informe]" min="0" max="10"></td>
+                    <td><input type="number" class="centrado" id="autogestion_segundo_informe" name="aut[segundo_informe]" min="0" max="10"></td>
+                    <td><input type="number" class="centrado" id="autogestion_nota_primer_cuatrimestre" name="aut[nota_primer_cuatrimestre]" min="0" max="10"></td>
+                    <td><input type="number" class="centrado" id="autogestion_primer_informe2" name="aut[primer_informe2]" min="0" max="10"></td>
+                    <td><input type="number" class="centrado" id="autogestion_segundo_informe2" name="aut[segundo_informe2]" min="0" max="10"></td>
+                    <td><input type="number" class="centrado" id="autogestion_nota_segundo_cuatrimestre" name="aut[nota_segundo_cuatrimestre]" min="0" max="10"></td>
+                    <td><input type="number" class="centrado" id="autogestion_calificacion_anual" name="aut[calificacion_anual]" min="0" max="10"></td>
+                    <td><input type="number" class="centrado" id="autogestion_calificacion_diciembre" name="aut[calificacion_diciembre]" min="0" max="10"></td>
+                    <td><input type="number" class="centrado" id="autogestion_calificacion_febrero_marzo" name="aut[calificacion_febrero_marzo]" min="0" max="10"></td>
+                    <td><input type="number" class="centrado" id="autogestion_calificacion_definitiva" name="aut[calificacion_definitiva]" min="0" max="10"></td>
+                </tr>
+                <tr>
+                    <td>Hardware 4</td>
+                    <td><input type="number" class="centrado" id="hardware 4_primer_informe" name="hard[primer_informe]" min="0" max="10"></td>
+                    <td><input type="number" class="centrado" id="hardware 4_segundo_informe" name="hard[segundo_informe]" min="0" max="10"></td>
+                    <td><input type="number" class="centrado" id="hardware 4_nota_primer_cuatrimestre" name="hard[nota_primer_cuatrimestre]" min="0" max="10"></td>
+                    <td><input type="number" class="centrado" id="hardware 4_primer_informe2" name="hard[primer_informe2]" min="0" max="10"></td>
+                    <td><input type="number" class="centrado" id="hardware 4_segundo_informe2" name="hard[segundo_informe2]" min="0" max="10"></td>
+                    <td><input type="number" class="centrado" id="hardware 4_nota_segundo_cuatrimestre" name="hard[nota_segundo_cuatrimestre]" min="0" max="10"></td>
+                    <td><input type="number" class="centrado" id="hardware 4_calificacion_anual" name="hard[calificacion_anual]" min="0" max="10"></td>
+                    <td><input type="number" class="centrado" id="hardware 4_calificacion_diciembre" name="hard[calificacion_diciembre]" min="0" max="10"></td>
+                    <td><input type="number" class="centrado" id="hardware 4_calificacion_febrero_marzo" name="hard[calificacion_febrero_marzo]" min="0" max="10"></td>
+                    <td><input type="number" class="centrado" id="hardware 4_calificacion_definitiva" name="hard[calificacion_definitiva]" min="0" max="10"></td>
+                </tr>
+                <tr>
+                    <td>Practicas 2</td>
+                    <td><input type="number" class="centrado" id="practicas 2_primer_informe" name="prac[primer_informe]" min="0" max="10"></td>
+                    <td><input type="number" class="centrado" id="practicas 2_segundo_informe" name="prac[segundo_informe]" min="0" max="10"></td>
+                    <td><input type="number" class="centrado" id="practicas 2_nota_primer_cuatrimestre" name="prac[nota_primer_cuatrimestre]" min="0" max="10"></td>
+                    <td><input type="number" class="centrado" id="practicas 2_primer_informe2" name="prac[primer_informe2]" min="0" max="10"></td>
+                    <td><input type="number" class="centrado" id="practicas 2_segundo_informe2" name="prac[segundo_informe2]" min="0" max="10"></td>
+                    <td><input type="number" class="centrado" id="practicas 2_nota_segundo_cuatrimestre" name="prac[nota_segundo_cuatrimestre]" min="0" max="10"></td>
+                    <td><input type="number" class="centrado" id="practicas 2_calificacion_anual" name="prac[calificacion_anual]" min="0" max="10"></td>
+                    <td><input type="number" class="centrado" id="practicas 2_calificacion_diciembre" name="prac[calificacion_diciembre]" min="0" max="10"></td>
+                    <td><input type="number" class="centrado" id="practicas 2_calificacion_febrero_marzo" name="prac[calificacion_febrero_marzo]" min="0" max="10"></td>
+                    <td><input type="number" class="centrado" id="practicas 2_calificacion_definitiva" name="prac[calificacion_definitiva]" min="0" max="10"></td>
+                </tr>
+                <tr>
+                    <td>Programacion 4</td>
+                    <td><input type="number" class="centrado" id="programacion 4_primer_informe" name="prac[primer_informe]" min="0" max="10"></td>
+                    <td><input type="number" class="centrado" id="programacion 4_segundo_informe" name="prac[segundo_informe]" min="0" max="10"></td>
+                    <td><input type="number" class="centrado" id="programacion 4_nota_primer_cuatrimestre" name="prac[nota_primer_cuatrimestre]" min="0" max="10"></td>
+                    <td><input type="number" class="centrado" id="programacion 4_primer_informe2" name="prac[primer_informe2]" min="0" max="10"></td>
+                    <td><input type="number" class="centrado" id="programacion 4_segundo_informe2" name="prac[segundo_informe2]" min="0" max="10"></td>
+                    <td><input type="number" class="centrado" id="programacion 4_nota_segundo_cuatrimestre" name="prac[nota_segundo_cuatrimestre]" min="0" max="10"></td>
+                    <td><input type="number" class="centrado" id="programacion 4_calificacion_anual" name="prac[calificacion_anual]" min="0" max="10"></td>
+                    <td><input type="number" class="centrado" id="programacion 4_calificacion_diciembre" name="prac[calificacion_diciembre]" min="0" max="10"></td>
+                    <td><input type="number" class="centrado" id="programacion 4_calificacion_febrero_marzo" name="prac[calificacion_febrero_marzo]" min="0" max="10"></td>
+                    <td><input type="number" class="centrado" id="programacion 4_calificacion_definitiva" name="prac[calificacion_definitiva]" min="0" max="10"></td>
+                </tr>
+                <tr>
+                    <td>Redes 3</td>
+                    <td><input type="number" class="centrado" id="redes 3_primer_informe" name="prac[primer_informe]" min="0" max="10"></td>
+                    <td><input type="number" class="centrado" id="redes 3_segundo_informe" name="prac[segundo_informe]" min="0" max="10"></td>
+                    <td><input type="number" class="centrado" id="redes 3_nota_primer_cuatrimestre" name="prac[nota_primer_cuatrimestre]" min="0" max="10"></td>
+                    <td><input type="number" class="centrado" id="redes 3_primer_informe2" name="prac[primer_informe2]" min="0" max="10"></td>
+                    <td><input type="number" class="centrado" id="redes 3_segundo_informe2" name="prac[segundo_informe2]" min="0" max="10"></td>
+                    <td><input type="number" class="centrado" id="redes 3_nota_segundo_cuatrimestre" name="prac[nota_segundo_cuatrimestre]" min="0" max="10"></td>
+                    <td><input type="number" class="centrado" id="redes 3_calificacion_anual" name="prac[calificacion_anual]" min="0" max="10"></td>
+                    <td><input type="number" class="centrado" id="redes 3_calificacion_diciembre" name="prac[calificacion_diciembre]" min="0" max="10"></td>
+                    <td><input type="number" class="centrado" id="redes 3_calificacion_febrero_marzo" name="prac[calificacion_febrero_marzo]" min="0" max="10"></td>
+                    <td><input type="number" class="centrado" id="redes 3_calificacion_definitiva" name="prac[calificacion_definitiva]" min="0" max="10"></td>
+                </tr>
+                <tr>
+                    <td>Arduino 3</td>
+                    <td><input type="number" class="centrado" id="arduino 3_primer_informe" name="prac[primer_informe]" min="0" max="10"></td>
+                    <td><input type="number" class="centrado" id="arduino 3_segundo_informe" name="prac[segundo_informe]" min="0" max="10"></td>
+                    <td><input type="number" class="centrado" id="arduino 3_nota_primer_cuatrimestre" name="prac[nota_primer_cuatrimestre]" min="0" max="10"></td>
+                    <td><input type="number" class="centrado" id="arduino 3_primer_informe2" name="prac[primer_informe2]" min="0" max="10"></td>
+                    <td><input type="number" class="centrado" id="arduino 3_segundo_informe2" name="prac[segundo_informe2]" min="0" max="10"></td>
+                    <td><input type="number" class="centrado" id="arduino 3_nota_segundo_cuatrimestre" name="prac[nota_segundo_cuatrimestre]" min="0" max="10"></td>
+                    <td><input type="number" class="centrado" id="arduino 3_calificacion_anual" name="prac[calificacion_anual]" min="0" max="10"></td>
+                    <td><input type="number" class="centrado" id="arduino 3_calificacion_diciembre" name="prac[calificacion_diciembre]" min="0" max="10"></td>
+                    <td><input type="number" class="centrado" id="arduino 3_calificacion_febrero_marzo" name="prac[calificacion_febrero_marzo]" min="0" max="10"></td>
+                    <td><input type="number" class="centrado" id="arduino 3_calificacion_definitiva" name="prac[calificacion_definitiva]" min="0" max="10"></td>
+                </tr>
+                
+                <!-- ID DE LA MATERIA DEBE SER EN MINUSCULA E IDENTICA AL NOMBRE ESTABLECIDO) -->
+            </tbody>
+        </table>
+
+    </form>
+
+    <script src="/assets/js/tablauserscripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,178 @@
+body {
+    background: 
+        url("/assets/img/wave.svg") no-repeat top center, /* Imagen superior */
+        rgba(255, 224, 224, 0.7); /* Color de fondo */
+    background-size: 2000px 200px; /* Ajusta el tamaño de la imagen (ancho x alto) */
+    background-attachment: scroll;
+    background-position: top center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para el encabezado y contenido */
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.8rem;
+    margin: 0;
+    padding: 40px 0 20px; /* Aumenta el margen inferior para la línea */
+    color: #b23a2f;
+    height: auto;
+    border-radius: 8px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Línea decorativa debajo del encabezado */
+header::after {
+    content: "";
+    width: 80%; /* Ajusta la longitud de la línea */
+    height: 2px; /* Grosor de la línea */
+    background-color: #b23a2f;
+    position: absolute;
+    bottom: 20px; /* Desplaza la línea un poco más hacia abajo */
+    left: 10%;
+}
+
+header img {
+    max-width: 150px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+/* Estilo para el texto de bienvenida */
+#mensajeBienvenida {
+    margin-top: -10px; /* Ajusta el valor para moverlo más cerca del título */
+    font-size: 2.2rem; /* Ajusta el tamaño si es necesario */
+    color: #b23a2f; /* Color del mensaje */
+}
+
+/* Estilo para el nombre de usuario, encima de la línea decorativa */
+#nombreUsuario {
+    font-size: 1.5rem; /* Tamaño del texto del nombre */
+    font-weight: bold; /* Resaltar el nombre */
+    color: #b23a2f; /* Mismo color que el encabezado */
+    margin-bottom: 10px; /* Espacio entre el nombre y la línea decorativa */
+    z-index: 2; /* Asegurarse de que el texto esté sobre la línea */
+}
+
+/* Contenedor para centrar el contenido */
+.container {
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Contenedores para los botones */
+.button-container {
+    margin: 10px 0; /* Espacio entre los botones */
+}
+
+/* Ajuste de los botones */
+.button {
+    display: block;
+    margin: 15px auto;
+    padding: 12px 24px;
+    font-size: 1.2em;
+    background-color: #b23a2f;
+    color: #ffe0e0b3;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: auto;
+}
+
+#textoindex {
+    color: #b23a2f;
+    font-size: 150%;
+}
+
+.button:hover {
+    background-color: #f33232;
+    transform: scale(1.05);
+}
+
+.pie-de-pagina {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    width: 100%;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.pie-de-pagina p {
+    margin: 0;
+    font-size: 20px;
+}
+
+.sociales-contenedor {
+    text-align: right; /* Alinear todo a la derecha */
+}
+
+.titulo-redes {
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: bold;
+
+}
+
+.redes-sociales {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.redes-sociales li {
+    margin-left: 15px;
+}
+
+.redes-sociales a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.redes-sociales a:hover {
+    text-decoration: underline;
+}
+
+/* Ajustes para pantallas móviles */
+@media (max-width: 600px) {
+    header {
+        font-size: 1.5rem;
+    }
+
+    header img {
+        max-width: 100px;
+    }
+    body {
+        background-size: 800px 100px; /* Ajuste para dispositivos móviles */
+    }
+
+    .button {
+        font-size: 1em;
+        width: 80%;
+    }
+
+    .container {
+        padding: 0 10px;
+    }
+}
+

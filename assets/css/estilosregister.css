@@ -1,0 +1,106 @@
+/* Reset para eliminar márgenes y paddings por defecto */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Aseguramos que el body ocupe toda la altura sin espacios adicionales */
+html, body {
+    min-height: 100%; /* Asegura que el cuerpo cubra toda la pantalla */
+    height: 100%; /* Evita que se genere un espacio vacío */
+    background: #ffe0e0 url("/assets/img/wave.svg") no-repeat bottom fixed;
+}
+
+/* Estilos para el encabezado */
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40%;
+    margin: 0;
+    padding: 10px 0;
+    color: #e41c1c;
+    width: 100%; /* Asegura que el encabezado ocupe todo el ancho disponible */
+    box-sizing: border-box;
+    /* Aseguramos que el header no ocupe espacio adicional innecesario */
+    height: auto;
+    min-height: 0; /* Evita cualquier altura predeterminada que pueda dejar espacio innecesario */
+}
+
+/* Imagen del encabezado */
+header img {
+    width: 20%;
+}
+
+/* Estilos para el contenedor de registro */
+.registro-container {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px; /* Ajusta el espacio arriba si es necesario */
+}
+
+/* Estilos para los campos de entrada */
+.grupo-nombre, .grupo-apellido, .grupo-usuario, .grupo-contraseña {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px; /* Espacio entre los campos */
+}
+
+/* Estilo de los inputs */
+.grupo-nombre input,
+.grupo-apellido input,
+.grupo-usuario input,
+.grupo-contraseña input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    box-sizing: border-box;
+}
+
+/* Estilos del botón */
+.btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #e41c1c;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 15px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo del mensaje de confirmación */
+#mensaje-confirmacion {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #fff;
+    border: 2px solid #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    z-index: 1000;
+}
+
+/* Eliminar cualquier margen o padding residual */
+body, html {
+    overflow-x: hidden;
+}

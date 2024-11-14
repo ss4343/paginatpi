@@ -1,0 +1,203 @@
+/* Estilos para el encabezado */
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem; /* Tamaño ajustado */
+    margin: 0;
+    padding: 10px 0;
+    color: #b23a2f; /* Tono más suave de rojo */
+    height: auto;
+}
+
+/* Imagen dentro del encabezado */
+header img {
+    max-width: 250px; /* Máximo tamaño */
+    width: 100%; /* Escala dependiendo del contenedor */
+}
+
+/* Contenedor para centrar el contenido */
+.container {
+    max-width: 1200px; /* Limitar ancho máximo */
+    margin: 0 auto;
+}
+
+/* Contenedor de los selectores (curso y alumno) */
+.select-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* Estilo de los selectores */
+select {
+    padding: 10px;
+    font-size: 1em;
+    width: 200px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
+/* Estilo de las etiquetas */
+label {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-right: 0px;
+    margin-left: 100px;
+}
+
+.centrado {
+    text-align: center;
+}
+
+/* Botón para enviar calificaciones */
+.boton {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #b23a2f;
+    color: #ffe0e0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+#enviarCalificacionesBtn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+/* Efecto hover en el botón */
+.boton:hover {
+    background-color: #f33232;
+}
+
+#enviarCalificacionesBtn:hover {
+    background-color: #f33232;
+}
+
+/* Estilos para la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+/* Fondo de la página */
+body {
+    background: 
+        url("/assets/img/wave.svg") no-repeat top center, /* Imagen superior */
+        rgba(255, 224, 224, 0.7);
+    background-size: auto, 160%; /* Ajusta el tamaño de la imagen inferior según tus necesidades */
+    background-attachment: scroll, scroll; /* Ambas imágenes se moverán con el contenido */
+    background-position: top center, bottom center; /* Posición de las imágenes */
+}
+
+/* Media queries para adaptaciones en dispositivos móviles */
+
+/* Dispositivos con un ancho máximo de 768px (tablets y móviles en orientación horizontal) */
+@media (max-width: 768px) {
+    header {
+        font-size: 1.5rem; /* Reducir el tamaño del texto en pantallas más pequeñas */
+        padding: 8px 0; /* Reducir padding */
+    }
+
+    .container {
+        padding: 0 10px; /* Añadir un poco de padding para evitar que el contenido toque los bordes */
+    }
+
+    .select-container {
+        flex-direction: column; /* Acomodar los selectores verticalmente */
+        gap: 10px; /* Reducir el espacio entre los selectores */
+    }
+
+    select {
+        width: 100%; /* Los selectores ocuparán el 100% del ancho */
+    }
+
+    label {
+        margin-left: 0px; /* Eliminar margen izquierdo */
+        font-size: 1em; /* Reducir el tamaño de la fuente */
+    }
+
+    .boton, #enviarCalificacionesBtn {
+        font-size: 1em; /* Reducir el tamaño del texto en los botones */
+        padding: 8px 16px; /* Reducir el tamaño del padding */
+    }
+
+    table {
+        font-size: 0.9rem; /* Reducir el tamaño de la tabla */
+    }
+
+    th, td {
+        padding: 6px; /* Reducir padding de las celdas */
+    }
+}
+
+/* Dispositivos con un ancho máximo de 480px (móviles en orientación vertical) */
+@media (max-width: 480px) {
+    header {
+        font-size: 1.2rem; /* Aún más pequeño en pantallas muy pequeñas */
+        padding: 6px 0; /* Reducir más el padding */
+    }
+
+    .container {
+        padding: 0 5px; /* Menos padding en pantallas muy pequeñas */
+    }
+
+    .select-container {
+        gap: 8px; /* Aumentar un poco el espacio entre los selectores */
+    }
+
+    select {
+        width: 100%; /* Los selectores deben ocupar todo el ancho */
+    }
+
+    label {
+        font-size: 0.9em; /* Reducir aún más el tamaño de la fuente de las etiquetas */
+    }
+
+    .boton, #enviarCalificacionesBtn {
+        font-size: 0.9em; /* Reducir aún más el tamaño de los botones */
+        padding: 6px 12px; /* Reducir el padding de los botones */
+    }
+
+    table {
+        font-size: 0.8rem; /* Reducir el tamaño de la tabla */
+    }
+
+    th, td {
+        padding: 5px; /* Reducir más el padding de las celdas */
+    }
+}

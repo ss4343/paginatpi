@@ -1,0 +1,54 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Calificaciones-Guevara</title>
+    <link rel="stylesheet" href="/assets/css/estilosregister.css">
+    <script src="/assets/js/Registerscripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <a href="Indexadmin.html">
+            <img src="/assets/img/logoguevara.png" alt="Logo del Colegio Guevara">
+        </a>
+        <h1 style="font-size: 330%;">Calificaciones del Colegio Guevara</h1>
+        <div class="registro-container">
+            <h2 style="font-size: 280%;">Registrar Alumno</h2>
+            <form id="registro-form">
+                <!-- Campos del formulario -->
+                <div class="grupo-nombre" style="color: black;">
+                    <h3 style="font-size: 230%;">Nombre</h3>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ingresa su nombre" required>
+                </div>
+                <div class="grupo-apellido" style="color: black;">
+                    <h3 style="font-size: 230%;">Apellido</h3>
+                    <input type="text" id="apellido" name="apellido" placeholder="Ingresa su apellido" required>
+                </div>
+                <div class="grupo-usuario" style="color: black;">
+                    <h3 style="font-size: 230%;">Usuario</h3>
+                    <input type="text" id="usuario" name="usuario" placeholder="Crea el usuario del alumno" required>
+                </div>
+                <div class="grupo-contraseña" style="color: black;">
+                    <h4 style="font-size: 230%;">Contraseña</h4>
+                    <input type="password" id="contraseña" name="contraseña" placeholder="Crea su contraseña" required>
+                </div>
+                <div class="grupo-curso" style="color: black;">
+                    <h3 style="font-size: 230%;">Curso</h3>
+                    <select id="curso" name="curso" required>
+                        <option value="" disabled selected>Selecciona un curso</option>
+                        <option value="71">7mo1ra</option>
+                        <option value="72">7mo2da</option>
+                        <option value="73">7mo3ra</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn">Registrarse</button>
+            </form>
+        </div>
+    </header>
+
+    <!-- Mensaje de confirmación -->
+    <div id="mensaje-confirmacion" style="display: none;">
+        <p>Usuario registrado con éxito</p>
+        <button id="cerrar-btn" onclick="cerrarMensaje()">Cerrar</button>
+    </div>
+</body>
+</html>
