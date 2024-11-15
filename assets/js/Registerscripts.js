@@ -5,7 +5,7 @@ document.getElementById('registro-form').addEventListener('submit', async (event
 
     try {
         // Enviar la solicitud al servidor
-        const response = await fetch('http://localhost:3006/registro-alumno', {
+        const response = await fetch('http://192.168.20.100:3006/registro-alumno', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },  // Tipo de contenido: JSON
             body: JSON.stringify(data),  // Convertir los datos del formulario a JSON

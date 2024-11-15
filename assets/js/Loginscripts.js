@@ -8,7 +8,7 @@ document.getElementById('login-form').addEventListener('submit', async (event) =
     const data = { usuario, contraseña }; // Ya no se incluye el curso
 
     try {
-        const response = await fetch('http://localhost:3006/iniciar-sesion', {
+        const response = await fetch('http://192.168.20.100:3006/iniciar-sesion', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

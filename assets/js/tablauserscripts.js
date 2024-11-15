@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (id_alumno) {
         try {
             // Realizar la consulta a tu servidor para obtener las calificaciones
-            const response = await fetch(`http://localhost:3006/calificaciones/${id_alumno}`);
+            const response = await fetch(`http://192.168.20.100:3006/calificaciones/${id_alumno}`);
             const result = await response.json();
 
             if (response.ok) {
