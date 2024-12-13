@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (id_alumno) {
         try {
             // Realizar la consulta a tu servidor para obtener las calificaciones
-            const response = await fetch(`http://192.168.20.100:3006/calificaciones/${id_alumno}`);
+            const response = await fetch(`http://localhost:3006/calificaciones/${id_alumno}`);
             const result = await response.json();
 
             if (response.ok) {
@@ -19,6 +19,23 @@ document.addEventListener('DOMContentLoaded', async () => {
     } else {
         alert('No se encontró el ID del alumno.');
     }
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+    // Obtener el estado del usuario desde sessionStorage
+    const usuario = sessionStorage.getItem('usuario');
+    const nombre = sessionStorage.getItem('nombre');
+    const apellido = sessionStorage.getItem('apellido');
+    const mensajeBienvenida = document.getElementById('mensajeBienvenida');
+
+    if (usuario) {
+        // Si el usuario ha iniciado sesión, muestra el mensaje de bienvenida
+        mensajeBienvenida.textContent = `Bienvenido, ${nombre} ${apellido}`;
+    } else {
+        // Si el usuario no ha iniciado sesión, muestra un mensaje genérico
+        mensajeBienvenida.textContent = "Bienvenido, por favor inicia sesión.";
+    }
+
 });
 
 // Función para mostrar las calificaciones en los inputs del formulario

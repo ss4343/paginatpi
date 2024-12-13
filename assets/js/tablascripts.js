@@ -19,7 +19,7 @@ async function cargarCursos() {
 
     try {
         // Cargar cursos desde el servidor
-        const response = await fetch('http://192.168.20.100:3006/cursos');
+        const response = await fetch('http://localhost:3006/cursos');
         if (!response.ok) throw new Error('Error en la respuesta de cursos');
         const cursos = await response.json();
 
@@ -45,7 +45,7 @@ async function cargarAlumnos() {
 
     if (cursoId) {
         try {
-            const response = await fetch(`http://192.168.20.100:3006/alumnos-por-curso/${cursoId}`);
+            const response = await fetch(`http://localhost:3006/alumnos-por-curso/${cursoId}`);
             if (!response.ok) throw new Error('Error en la respuesta de alumnos');
             const alumnos = await response.json();
 
@@ -73,7 +73,7 @@ function verNotas() {
         return;
     }
 
-    fetch(`http://192.168.20.100:3006/obtenerNotas?id_alumno=${alumnoId}&id_curso=${cursoId}`)
+    fetch(`http://localhost:3006/obtenerNotas?id_alumno=${alumnoId}&id_curso=${cursoId}`)
         .then(response => response.json())
         .then(data => {
             console.log("Datos recibidos:", data);
@@ -149,7 +149,7 @@ async function enviarCalificaciones() {
         materias: materias
     };
 
-    fetch('http://192.168.20.100:3006/api/calificaciones', {
+    fetch('http://localhost:3006/api/calificaciones', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data),

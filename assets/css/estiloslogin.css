@@ -15,6 +15,10 @@ header img {
     width: 20%;
 }
 
+footer img {
+    width: 10%;
+}
+
 .registro-container {
     background-color: rgba(255, 255, 255, 0.3);
     border-radius: 8px;
@@ -68,6 +72,112 @@ h2 {
     margin-top: 10px;
 }
 
+.pie-de-pagina {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    width: 100%;
+    text-align: center;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.pie-de-pagina p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.sociales-contenedor {
+    text-align: center;
+}
+
+.titulo-redes {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.redes-sociales {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.redes-sociales li {
+    display: inline-block;
+}
+
+.redes-sociales a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.redes-sociales a:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+}
+
+.redes-sociales img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.redes-sociales img:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+}
+
 body {
     background: #ffe0e0 url("/assets/img/wave.svg") no-repeat bottom fixed;
+}
+
+@media (max-width: 600px) {
+    header {
+        font-size: 1.5rem;
+    }
+
+    header img {
+        max-width: 100px;
+    }
+
+    body {
+        background-size: 800px 100px; /* Ajuste para dispositivos móviles */
+    }
+
+    .button {
+        font-size: 1em;
+        width: 80%;
+    }
+
+    .container {
+        padding: 0 10px;
+    }
+
+    .pie-de-pagina {
+        padding: 15px 0;
+    }
+
+    .titulo-redes {
+        font-size: 16px;
+    }
+
+    .redes-sociales {
+        gap: 10px;
+    }
+
+    .redes-sociales img {
+        width: 25px;
+        height: 25px;
+    }
 }

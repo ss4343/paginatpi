@@ -12,8 +12,8 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 const connection = mysql.createConnection({
-    host: '192.168.1.16',
-    user: 'virtualBox1',
+    host: 'localhost',
+    user: 'root',
     password: 'Abc123456',
     database: 'ColegioGuevara'
 });
@@ -74,7 +74,7 @@ app.post('/iniciar-sesion', (req, res) => {
         if (resultAdmin.length > 0) {
             // El usuario es administrador
             return res.status(200).json({
-                redirect: 'http://192.168.20.100:3006/indexadmin.html',
+                redirect: 'http://localhost:3006/indexadmin.html',
                 nombre: resultAdmin[0].nombre,
                 apellido: resultAdmin[0].apellido,
                 isAdmin: true // Indicamos que es un administrador
@@ -95,7 +95,7 @@ app.post('/iniciar-sesion', (req, res) => {
                 const idCurso = resultAlumno[0].id_curso;
 
                 return res.status(200).json({
-                    redirect: 'http://192.168.20.100:3006/index.html',  // Redirigir al alumno
+                    redirect: 'http://localhost:3006/tablauser.html',  // Redirigir al alumno
                     nombre: resultAlumno[0].nombre,
                     apellido: resultAlumno[0].apellido,
                     isAdmin: false,  // Indica que no es un administrador
@@ -288,8 +288,8 @@ app.get('/calificaciones/:id_alumno', (req, res) => {
 
 
 app.use(express.static(path.join(__dirname)));
-app.get('/', (req, res) => res.sendFile(path.join(__dirname, '/index.html')));
+app.get('/', (req, res) => res.sendFile(path.join(__dirname, 'Login.html')));
 
-app.listen(PORT, () => console.log(`Servidor ejecutándose en http://192.168.20.100:${PORT}`));
+app.listen(PORT, () => console.log(`Servidor ejecutándose en http://localhost:${PORT}`));
 
 module.exports = connection;

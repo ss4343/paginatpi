@@ -18,7 +18,21 @@ header img {
     max-width: 250px; /* Máximo tamaño */
     width: 100%; /* Escala dependiendo del contenedor */
 }
+/* Estilo para el texto de bienvenida */
+#mensajeBienvenida {
+    margin-top: -10px; /* Ajusta el valor para moverlo más cerca del título */
+    font-size: 2.2rem; /* Ajusta el tamaño si es necesario */
+    color: #b23a2f; /* Color del mensaje */
+}
 
+/* Estilo para el nombre de usuario, encima de la línea decorativa */
+#nombreUsuario {
+    font-size: 1.5rem; /* Tamaño del texto del nombre */
+    font-weight: bold; /* Resaltar el nombre */
+    color: #b23a2f; /* Mismo color que el encabezado */
+    margin-bottom: 10px; /* Espacio entre el nombre y la línea decorativa */
+    z-index: 2; /* Asegurarse de que el texto esté sobre la línea */
+}
 /* Contenedor para centrar el contenido */
 .container {
     max-width: 1200px; /* Limitar ancho máximo */

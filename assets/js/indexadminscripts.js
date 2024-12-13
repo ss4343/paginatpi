@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
             sessionStorage.removeItem('isAdmin'); // Eliminar también el indicador de admin
 
             // Redirigir al login
-            window.location.href = 'index.html'; // Asegúrate de que el archivo de login esté correctamente vinculado
+            window.location.href = 'Login.html'; // Asegúrate de que el archivo de login esté correctamente vinculado
         });
     }
 });
